@@ -1,0 +1,1078 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.devlomi.fireapp"
+4    android:versionCode="24"
+5    android:versionName="1.3.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml
+10
+11    <!-- PERMISSIONS -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:7:5-67
+12-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:8:5-79
+13-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:9:5-76
+14-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:9:22-73
+15    <uses-permission android:name="android.permission.READ_CONTACTS" />
+15-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:10:5-72
+15-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:10:22-69
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:11:5-80
+16-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:11:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:12:5-81
+17-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:12:22-78
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:13:5-65
+18-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:13:22-62
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:14:5-71
+19-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:14:22-68
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:15:5-80
+20-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:15:22-77
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:16:5-68
+21-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:16:22-65
+22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+22-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:17:5-81
+22-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+23-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:18:5-79
+23-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:18:22-76
+24    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+24-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:19:5-81
+24-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:19:22-78
+25    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+25-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:20:5-75
+25-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:20:22-72
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:21:5-82
+26-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:21:22-79
+27    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+27-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:22:5-77
+27-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:22:22-74
+28    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+28-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:23:5-81
+28-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:23:22-78
+29
+30    <uses-feature
+30-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:25:5-27:36
+31        android:name="android.hardware.location.network"
+31-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:26:9-57
+32        android:required="false" />
+32-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:27:9-33
+33    <uses-feature
+33-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:28:5-30:36
+34        android:name="android.hardware.location.gps"
+34-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:29:9-53
+35        android:required="false" />
+35-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:30:9-33
+36
+37    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+37-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:24:5-72
+37-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:24:22-69
+38    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+38-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:25:5-74
+38-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:25:22-71
+39
+40    <uses-feature
+40-->[com.google.android.gms:play-services-maps:17.0.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/fe9affc81ef9988a2ed426913e49aae1/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+41        android:glEsVersion="0x00020000"
+41-->[com.google.android.gms:play-services-maps:17.0.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/fe9affc81ef9988a2ed426913e49aae1/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+42        android:required="true" /> <!-- for android -->
+42-->[com.google.android.gms:play-services-maps:17.0.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/fe9affc81ef9988a2ed426913e49aae1/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+43    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+44    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+45    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+46    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+47    <!-- for Samsung -->
+48    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+48-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+48-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+49    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+49-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+49-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+50    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+50-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+50-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+51    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+51-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+51-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+52    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+52-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+52-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+53    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+53-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+53-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+54    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+54-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+54-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+55    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+55-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+55-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+56    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+56-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+56-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+57    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+57-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+57-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+58    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+58-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+58-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+59    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+59-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+59-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+60    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+60-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+60-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+61    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+61-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+61-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+62    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+62-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+62-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+63    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+63-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+63-->[me.leolin:ShortcutBadger:1.1.22] /home/veselin/.gradle/caches/transforms-2/files-2.1/6e653017c9f0622e8f633a3bbc6fd7ec/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+64    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+64-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:26:5-110
+64-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:26:22-107
+65
+66    <application
+66-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:32:5-334:19
+67        android:name="com.devlomi.fireapp.utils.MyApp"
+67-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:33:9-36
+68        android:allowBackup="false"
+68-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:34:9-36
+69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+69-->[androidx.core:core:1.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/e57a7f649bad40b8bf9eb4228904fe68/core-1.3.0/AndroidManifest.xml:24:18-86
+70        android:debuggable="true"
+71        android:icon="@mipmap/ic_launcher"
+71-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:35:9-43
+72        android:label="@string/app_name"
+72-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:36:9-41
+73        android:requestLegacyExternalStorage="true"
+73-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:37:9-52
+74        android:roundIcon="@mipmap/ic_launcher_round"
+74-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:38:9-54
+75        android:supportsRtl="false"
+75-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:39:9-36
+76        android:testOnly="true"
+77        android:theme="@style/AppTheme" >
+77-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:40:9-40
+78        <uses-library
+78-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:44:9-46:40
+79            android:name="org.apache.http.legacy"
+79-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:45:13-50
+80            android:required="false" />
+80-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:46:13-37
+81
+82        <!-- ACTIVITIES -->
+83
+84        <activity
+84-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:51:9-55:54
+85            android:name="com.devlomi.fireapp.activities.LockscreenActivity"
+85-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:52:13-58
+86            android:launchMode="singleTask"
+86-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:53:13-44
+87            android:screenOrientation="portrait"
+87-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:54:13-49
+88            android:theme="@style/FullscreenTheme" />
+88-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:55:13-51
+89        <activity
+89-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:57:9-62:71
+90            android:name="com.devlomi.fireapp.activities.authentication.AuthenticationActivity"
+90-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:58:13-77
+91            android:exported="true"
+91-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:59:13-36
+92            android:screenOrientation="portrait"
+92-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:60:13-49
+93            android:theme="@style/AppTheme.NoActionBar"
+93-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:61:13-56
+94            android:windowSoftInputMode="stateVisible|adjustResize" />
+94-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:62:13-68
+95        <activity
+95-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:63:9-66:59
+96            android:name="com.devlomi.fireapp.activities.UpdateActivity"
+96-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:64:13-54
+97            android:screenOrientation="portrait"
+97-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:65:13-49
+98            android:theme="@style/AppTheme.NoActionBar" />
+98-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:66:13-56
+99        <activity
+99-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:67:9-71:71
+100            android:name="com.devlomi.fireapp.activities.TextStatusActivity"
+100-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:68:13-58
+101            android:screenOrientation="portrait"
+101-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:69:13-49
+102            android:theme="@style/AppTheme.Translucent"
+102-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:70:13-56
+103            android:windowSoftInputMode="stateVisible|adjustResize" />
+103-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:71:13-68
+104        <activity
+104-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:72:9-76:59
+105            android:name="com.devlomi.fireapp.activities.main.MainActivity"
+105-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:73:13-57
+106            android:launchMode="singleTop"
+106-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:74:13-43
+107            android:screenOrientation="portrait"
+107-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:75:13-49
+108            android:theme="@style/AppTheme.NoActionBar" />
+108-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:76:13-56
+109        <activity
+109-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:77:9-79:52
+110            android:name="com.devlomi.fireapp.activities.ShareGroupLinkActivity"
+110-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:78:13-62
+111            android:screenOrientation="portrait" />
+111-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:79:13-49
+112        <activity
+112-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:80:9-88:20
+113            android:name="com.devlomi.fireapp.activities.SplashActivity"
+113-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:81:13-54
+114            android:screenOrientation="portrait" >
+114-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:82:13-49
+115            <intent-filter>
+115-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:83:13-87:29
+116                <action android:name="android.intent.action.MAIN" />
+116-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:84:17-69
+116-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:84:25-66
+117
+118                <category android:name="android.intent.category.LAUNCHER" />
+118-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:86:17-77
+118-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:86:27-74
+119            </intent-filter>
+120        </activity>
+121        <activity
+121-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:89:9-92:59
+122            android:name="com.devlomi.fireapp.activities.NewChatActivity"
+122-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:90:13-55
+123            android:screenOrientation="portrait"
+123-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:91:13-49
+124            android:theme="@style/AppTheme.NoActionBar" />
+124-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:92:13-56
+125        <activity
+125-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:93:9-98:59
+126            android:name="com.devlomi.fireapp.activities.main.messaging.ChatActivity"
+126-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:94:13-67
+127            android:label=""
+127-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:95:13-29
+128            android:parentActivityName="com.devlomi.fireapp.activities.main.MainActivity"
+128-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:96:13-71
+129            android:screenOrientation="portrait"
+129-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:97:13-49
+130            android:theme="@style/AppTheme.NoActionBar" />
+130-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:98:13-56
+131        <activity
+131-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:99:9-103:54
+132            android:name="com.devlomi.fireapp.activities.FullscreenActivity"
+132-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:100:13-58
+133            android:label=""
+133-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:101:13-29
+134            android:screenOrientation="portrait"
+134-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:102:13-49
+135            android:theme="@style/FullScreenTheme" />
+135-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:103:13-51
+136        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+136-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:104:9-85
+136-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:104:19-82
+137        <activity
+137-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:105:9-107:39
+138            android:name="com.devlomi.fireapp.activities.AgreePrivacyPolicyActivity"
+138-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:106:13-66
+139            android:exported="true" />
+139-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:107:13-36
+140        <activity
+140-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:108:9-111:59
+141            android:name="com.devlomi.fireapp.activities.CameraActivity"
+141-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:109:13-54
+142            android:screenOrientation="portrait"
+142-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:110:13-49
+143            android:theme="@style/AppTheme.NoActionBar" />
+143-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:111:13-56
+144        <activity
+144-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:112:9-114:50
+145            android:name="com.devlomi.fireapp.activities.ProfilePhotoDialog"
+145-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:113:13-58
+146            android:theme="@style/DialogTheme" />
+146-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:114:13-47
+147        <activity
+147-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:115:9-179:20
+148            android:name="com.devlomi.fireapp.activities.ForwardActivity"
+148-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:116:13-55
+149            android:launchMode="singleTop"
+149-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:117:13-43
+150            android:screenOrientation="portrait"
+150-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:118:13-49
+151            android:theme="@style/AppTheme.NoActionBar" >
+151-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:119:13-56
+152
+153            <!-- these intent filters to receive data from other apps including images,videos,audio,contacts -->
+154
+155
+156            <!-- receive text -->
+157            <intent-filter>
+157-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:125:13-131:29
+158                <action android:name="android.intent.action.SEND" />
+158-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:17-69
+158-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:25-66
+159
+160                <category android:name="android.intent.category.DEFAULT" />
+160-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:17-76
+160-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:27-73
+161
+162                <data android:mimeType="text/plain" />
+162-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+162-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:23-52
+163            </intent-filter>
+164
+165            <!-- receive one image -->
+166            <intent-filter>
+166-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:134:13-140:29
+167                <action android:name="android.intent.action.SEND" />
+167-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:17-69
+167-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:25-66
+168
+169                <category android:name="android.intent.category.DEFAULT" />
+169-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:17-76
+169-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:27-73
+170
+171                <data android:mimeType="image/*" />
+171-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+171-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:23-52
+172            </intent-filter>
+173
+174            <!-- receive multiple images -->
+175
+176            <intent-filter>
+176-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:144:13-150:29
+177                <action android:name="android.intent.action.SEND_MULTIPLE" />
+177-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:145:17-78
+177-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:145:25-75
+178
+179                <category android:name="android.intent.category.DEFAULT" />
+179-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:17-76
+179-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:27-73
+180
+181                <data android:mimeType="image/*" />
+181-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+181-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:23-52
+182            </intent-filter>
+183
+184            <!-- receive one video only -->
+185
+186            <intent-filter>
+186-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:154:13-160:29
+187                <action android:name="android.intent.action.SEND" />
+187-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:17-69
+187-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:25-66
+188
+189                <category android:name="android.intent.category.DEFAULT" />
+189-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:17-76
+189-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:27-73
+190
+191                <data android:mimeType="video/*" />
+191-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+191-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:23-52
+192            </intent-filter>
+193
+194            <!-- receive one audio -->
+195            <intent-filter>
+195-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:163:13-169:29
+196                <action android:name="android.intent.action.SEND" />
+196-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:17-69
+196-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:25-66
+197
+198                <category android:name="android.intent.category.DEFAULT" />
+198-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:17-76
+198-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:27-73
+199
+200                <data android:mimeType="audio/*" />
+200-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+200-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:23-52
+201            </intent-filter>
+202
+203            <!-- receive contacts -->
+204            <intent-filter>
+204-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:172:13-178:29
+205                <action android:name="android.intent.action.SEND" />
+205-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:17-69
+205-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:126:25-66
+206
+207                <category android:name="android.intent.category.DEFAULT" />
+207-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:17-76
+207-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:27-73
+208
+209                <data android:mimeType="text/x-vcard" />
+209-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+209-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:23-52
+210            </intent-filter>
+211        </activity>
+212        <activity
+212-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:180:9-183:59
+213            android:name="com.devlomi.fireapp.activities.UserDetailsActivity"
+213-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:181:13-59
+214            android:screenOrientation="portrait"
+214-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:182:13-49
+215            android:theme="@style/AppTheme.NoActionBar" />
+215-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:183:13-56
+216        <activity
+216-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:184:9-187:59
+217            android:name="com.devlomi.fireapp.activities.MediaGalleryActivity"
+217-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:185:13-60
+218            android:screenOrientation="portrait"
+218-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:186:13-49
+219            android:theme="@style/AppTheme.NoActionBar" />
+219-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:187:13-56
+220        <activity
+220-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:188:9-190:52
+221            android:name="com.devlomi.fireapp.activities.SelectContactNumbersActivity"
+221-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:189:13-68
+222            android:screenOrientation="portrait" />
+222-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:190:13-49
+223        <activity
+223-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:191:9-193:52
+224            android:name="com.devlomi.fireapp.activities.ContactDetailsActivity"
+224-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:192:13-62
+225            android:screenOrientation="portrait" />
+225-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:193:13-49
+226        <activity
+226-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:194:9-199:52
+227            android:name="com.devlomi.fireapp.activities.settings.SettingsActivity"
+227-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:195:13-65
+228            android:exported="true"
+228-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:196:13-36
+229            android:label="@string/title_activity_settings"
+229-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:197:13-60
+230            android:screenOrientation="portrait"
+230-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:198:13-49
+231            android:theme="@style/SettingsTheme" />
+231-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:199:13-49
+232        <activity
+232-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:200:9-203:54
+233            android:name="com.devlomi.fireapp.activities.ProfilePhotoActivity"
+233-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:201:13-60
+234            android:screenOrientation="portrait"
+234-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:202:13-49
+235            android:theme="@style/FullScreenTheme" />
+235-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:203:13-51
+236        <activity
+236-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:204:9-207:58
+237            android:name="com.devlomi.fireapp.activities.setup.SetupUserActivity"
+237-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:205:13-63
+238            android:screenOrientation="portrait"
+238-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:206:13-49
+239            android:windowSoftInputMode="adjustResize" />
+239-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:207:13-55
+240        <activity
+240-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:208:9-210:59
+241            android:name="com.devlomi.fireapp.activities.NewGroupActivity"
+241-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:209:13-56
+242            android:theme="@style/AppTheme.NoActionBar" />
+242-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:210:13-56
+243        <activity
+243-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:211:9-215:70
+244            android:name="com.devlomi.fireapp.activities.ViewStatusActivity"
+244-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:212:13-58
+245            android:screenOrientation="portrait"
+245-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:213:13-49
+246            android:theme="@style/FullscreenTheme"
+246-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:214:13-51
+247            android:windowSoftInputMode="stateHidden|adjustResize" />
+247-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:215:13-67
+248        <activity
+248-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:216:9-224:20
+249            android:name="com.devlomi.fireapp.activities.MyStatusActivity"
+249-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:217:13-56
+250            android:label="@string/title_activity_my_status"
+250-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:218:13-61
+251            android:parentActivityName="com.devlomi.fireapp.activities.main.MainActivity"
+251-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:219:13-71
+252            android:theme="@style/AppTheme.NoActionBar" >
+252-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:220:13-56
+253            <meta-data
+253-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:221:13-223:84
+254                android:name="android.support.PARENT_ACTIVITY"
+254-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:222:17-63
+255                android:value="com.devlomi.fireapp.activities.main.MainActivity" />
+255-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:223:17-81
+256        </activity>
+257        <activity
+257-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:226:9-229:59
+258            android:name="com.devlomi.fireapp.activities.calling.CallingActivity"
+258-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:227:13-63
+259            android:screenOrientation="portrait"
+259-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:228:13-49
+260            android:theme="@style/AppTheme.NoActionBar" />
+260-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:229:13-56
+261        <activity
+261-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:232:9-234:52
+262            android:name="com.devlomi.fireapp.activities.NewCallActivity"
+262-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:233:13-55
+263            android:screenOrientation="portrait" />
+263-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:234:13-49
+264        <activity
+264-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:235:9-254:20
+265            android:name="com.devlomi.fireapp.activities.AcceptInviteLink"
+265-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:236:13-56
+266            android:screenOrientation="portrait"
+266-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:237:13-49
+267            android:theme="@style/DialogTheme" >
+267-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:238:13-47
+268            <intent-filter>
+268-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:239:13-253:29
+269                <action android:name="android.intent.action.VIEW" />
+269-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:240:17-69
+269-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:240:25-66
+270
+271                <category android:name="android.intent.category.DEFAULT" />
+271-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:17-76
+271-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:128:27-73
+272                <category android:name="android.intent.category.BROWSABLE" />
+272-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:243:17-78
+272-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:243:27-75
+273
+274                <data
+274-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+275                    android:host="@string/group_invite_host"
+275-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:246:21-61
+276                    android:pathPrefix="/"
+276-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:247:21-43
+277                    android:scheme="http" />
+277-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:248:21-42
+278                <data
+278-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:130:17-55
+279                    android:host="@string/group_invite_host"
+279-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:246:21-61
+280                    android:pathPrefix="/"
+280-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:247:21-43
+281                    android:scheme="https" />
+281-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:248:21-42
+282            </intent-filter>
+283        </activity>
+284        <activity
+284-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:255:9-258:59
+285            android:name="com.devlomi.fireapp.placespicker.PlacesPickerActivity"
+285-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:256:13-62
+286            android:screenOrientation="portrait"
+286-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:257:13-49
+287            android:theme="@style/AppTheme.NoActionBar" />
+287-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:258:13-56
+288        <activity
+288-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:260:9-263:62
+289            android:name="com.devlomi.fireapp.extensions.ExitAndRemoveFromRecentAppsDummyActivity"
+289-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:261:13-80
+290            android:screenOrientation="portrait"
+290-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:262:13-49
+291            android:theme="@android:style/Theme.NoDisplay" />
+291-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:263:13-59
+292
+293        <!-- SERVICES -->
+294        <service
+294-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:266:9-268:72
+295            android:name="com.devlomi.fireapp.job.NetworkJobService"
+295-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:267:13-50
+296            android:permission="android.permission.BIND_JOB_SERVICE" />
+296-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:268:13-69
+297        <service
+297-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:269:9-271:72
+298            android:name="com.devlomi.fireapp.job.SaveTokenJob"
+298-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:270:13-45
+299            android:permission="android.permission.BIND_JOB_SERVICE" />
+299-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:271:13-69
+300        <service
+300-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:272:9-274:72
+301            android:name="com.devlomi.fireapp.job.SetLastSeenJob"
+301-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:273:13-47
+302            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- <service -->
+302-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:274:13-69
+303        <service
+303-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:275:9-282:19
+304            android:name="com.devlomi.fireapp.services.MyFCMService"
+304-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:276:13-50
+305            android:enabled="true"
+305-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:277:13-35
+306            android:exported="false" >
+306-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:278:13-37
+307            <intent-filter>
+307-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:279:13-281:29
+308                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+308-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:280:17-78
+308-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:280:25-75
+309            </intent-filter>
+310        </service>
+311        <service
+311-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:283:9-285:40
+312            android:name="com.devlomi.fireapp.services.FCMRegistrationService"
+312-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:284:13-60
+313            android:exported="false" />
+313-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:285:13-37
+314        <service
+314-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:286:9-289:40
+315            android:name="com.devlomi.fireapp.services.InternetConnectedListener"
+315-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:287:13-63
+316            android:enabled="true"
+316-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:288:13-35
+317            android:exported="false" />
+317-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:289:13-37
+318        <service android:name="com.devlomi.fireapp.services.NetworkService" />
+318-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:290:9-60
+318-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:290:18-57
+319        <service
+319-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:291:9-294:40
+320            android:name="com.devlomi.fireapp.services.AudioService"
+320-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:292:13-50
+321            android:enabled="true"
+321-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:293:13-35
+322            android:exported="false" />
+322-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:294:13-37
+323
+324        <receiver
+324-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:296:9-298:40
+325            android:name="com.devlomi.fireapp.receivers.HandleReplyReceiver"
+325-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:297:13-58
+326            android:exported="false" />
+326-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:298:13-37
+327        <receiver
+327-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:299:9-301:40
+328            android:name="com.devlomi.fireapp.receivers.MarkAsReadReceiver"
+328-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:300:13-57
+329            android:exported="false" />
+329-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:301:13-37
+330
+331        <service
+331-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:303:9-305:40
+332            android:name="com.devlomi.fireapp.services.CallingService"
+332-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:304:13-52
+333            android:exported="false" />
+333-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:305:13-37
+334
+335        <provider
+336            android:name="androidx.core.content.FileProvider"
+336-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:308:13-62
+337            android:authorities="com.devlomi.fireapp.provider"
+337-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:309:13-60
+338            android:exported="false"
+338-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:310:13-37
+339            android:grantUriPermissions="true" >
+339-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:311:13-47
+340            <meta-data
+340-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:312:13-314:58
+341                android:name="android.support.FILE_PROVIDER_PATHS"
+341-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:313:17-67
+342                android:resource="@xml/provider_paths" />
+342-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:314:17-55
+343        </provider>
+344
+345        <meta-data
+345-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:317:9-319:52
+346            android:name="com.google.android.geo.API_KEY"
+346-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:318:13-58
+347            android:value="@string/maps_api_key" />
+347-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:319:13-49
+348        <meta-data
+348-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:320:9-322:52
+349            android:name="com.google.android.gms.ads.APPLICATION_ID"
+349-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:321:13-69
+350            android:value="@string/admob_app_id" />
+350-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:322:13-49
+351        <meta-data
+351-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:323:9-325:52
+352            android:name="com.here.android.maps.appid"
+352-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:324:13-55
+353            android:value="r5oVXgaaSqnhWtqsuMMc" />
+353-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:325:13-49
+354        <meta-data
+354-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:326:9-328:54
+355            android:name="com.here.android.maps.apptoken"
+355-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:327:13-58
+356            android:value="Pv-_XkZ7CsE9EJn5W1Ahcg" />
+356-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:328:13-51
+357
+358        <activity
+358-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:330:9-333:59
+359            android:name="com.devlomi.fireapp.activities.BackupChatActivity"
+359-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:331:13-58
+360            android:label="@string/title_activity_backup_chat"
+360-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:332:13-63
+361            android:theme="@style/AppTheme.NoActionBar" />
+361-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:333:13-56
+362        <activity
+362-->[:imageeditengine] /home/veselin/Documents/Projects/Staaps/imageeditengine/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-19:20
+363            android:name="com.droidninja.imageeditengine.ImageEditActivity"
+363-->[:imageeditengine] /home/veselin/Documents/Projects/Staaps/imageeditengine/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-76
+364            android:theme="@style/LibAppTheme"
+364-->[:imageeditengine] /home/veselin/Documents/Projects/Staaps/imageeditengine/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-47
+365            android:windowSoftInputMode="adjustNothing" >
+365-->[:imageeditengine] /home/veselin/Documents/Projects/Staaps/imageeditengine/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-56
+366        </activity>
+367        <activity
+367-->[com.github.broakenmedia:MultiContactPicker:1.8.5] /home/veselin/.gradle/caches/transforms-2/files-2.1/ef1d3e6d9c239a54ca97c2bbdb1d7734/jetified-MultiContactPicker-1.8.5/AndroidManifest.xml:17:9-20:20
+368            android:name="com.wafflecopter.multicontactpicker.MultiContactPickerActivity"
+368-->[com.github.broakenmedia:MultiContactPicker:1.8.5] /home/veselin/.gradle/caches/transforms-2/files-2.1/ef1d3e6d9c239a54ca97c2bbdb1d7734/jetified-MultiContactPicker-1.8.5/AndroidManifest.xml:18:13-90
+369            android:label="@string/picker_title" >
+369-->[com.github.broakenmedia:MultiContactPicker:1.8.5] /home/veselin/.gradle/caches/transforms-2/files-2.1/ef1d3e6d9c239a54ca97c2bbdb1d7734/jetified-MultiContactPicker-1.8.5/AndroidManifest.xml:19:13-49
+370        </activity>
+371        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
+371-->[com.zhihu.android:matisse:0.5.3-beta3] /home/veselin/.gradle/caches/transforms-2/files-2.1/3fefd56a7ccc826642ea9b2bde367056/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:28:9-73
+371-->[com.zhihu.android:matisse:0.5.3-beta3] /home/veselin/.gradle/caches/transforms-2/files-2.1/3fefd56a7ccc826642ea9b2bde367056/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:28:19-70
+372        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+372-->[com.zhihu.android:matisse:0.5.3-beta3] /home/veselin/.gradle/caches/transforms-2/files-2.1/3fefd56a7ccc826642ea9b2bde367056/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:29:9-87
+372-->[com.zhihu.android:matisse:0.5.3-beta3] /home/veselin/.gradle/caches/transforms-2/files-2.1/3fefd56a7ccc826642ea9b2bde367056/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:29:19-84
+373        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+373-->[com.zhihu.android:matisse:0.5.3-beta3] /home/veselin/.gradle/caches/transforms-2/files-2.1/3fefd56a7ccc826642ea9b2bde367056/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:30:9-90
+373-->[com.zhihu.android:matisse:0.5.3-beta3] /home/veselin/.gradle/caches/transforms-2/files-2.1/3fefd56a7ccc826642ea9b2bde367056/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:30:19-87
+374        <activity
+374-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:28:9-31:67
+375            android:name="androidx.biometric.DeviceCredentialHandlerActivity"
+375-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:29:13-78
+376            android:exported="true"
+376-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:30:13-36
+377            android:theme="@style/DeviceCredentialHandlerTheme" />
+377-->[androidx.biometric:biometric:1.0.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d4b73aeca117ef22f84c2ac67eb11057/biometric-1.0.1/AndroidManifest.xml:31:13-64
+378        <!--
+379             FirebaseMessagingService performs security checks at runtime,
+380             but set to not exported to explicitly avoid allowing another app to call it.
+381        -->
+382        <service
+382-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:28:9-34:19
+383            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+383-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:29:13-82
+384            android:exported="false" >
+384-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:30:13-37
+385            <intent-filter android:priority="-500" >
+385-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:279:13-281:29
+386                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+386-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:280:17-78
+386-->/home/veselin/Documents/Projects/Staaps/app/src/main/AndroidManifest.xml:280:25-75
+387            </intent-filter>
+388        </service>
+389        <service
+389-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:35:9-41:19
+390            android:name="com.google.firebase.components.ComponentDiscoveryService"
+390-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:36:13-84
+391            android:directBootAware="true"
+391-->[com.google.firebase:firebase-common:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/91829b66e6434acd43e7dafa23f781b1/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+392            android:exported="false" >
+392-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:37:13-37
+393            <meta-data
+393-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:38:13-40:85
+394                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+394-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:39:17-119
+395                android:value="com.google.firebase.components.ComponentRegistrar" />
+395-->[com.google.firebase:firebase-messaging:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/0e8ed562a0496ce5e0bf0dd7b4853155/jetified-firebase-messaging-20.1.7/AndroidManifest.xml:40:17-82
+396            <meta-data
+396-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:36:13-38:85
+397                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+397-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:37:17-109
+398                android:value="com.google.firebase.components.ComponentRegistrar" />
+398-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:38:17-82
+399            <meta-data
+399-->[com.google.firebase:firebase-database-ktx:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/934b5f119d91964a170ac1a6759d75d8/jetified-firebase-database-ktx-19.3.0/AndroidManifest.xml:15:13-17:85
+400                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+400-->[com.google.firebase:firebase-database-ktx:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/934b5f119d91964a170ac1a6759d75d8/jetified-firebase-database-ktx-19.3.0/AndroidManifest.xml:16:17-124
+401                android:value="com.google.firebase.components.ComponentRegistrar" />
+401-->[com.google.firebase:firebase-database-ktx:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/934b5f119d91964a170ac1a6759d75d8/jetified-firebase-database-ktx-19.3.0/AndroidManifest.xml:17:17-82
+402            <meta-data
+402-->[com.google.firebase:firebase-database:19.3.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d96243573e696b8c5fe62d666ab2182b/jetified-firebase-database-19.3.1/AndroidManifest.xml:32:13-34:85
+403                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+403-->[com.google.firebase:firebase-database:19.3.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d96243573e696b8c5fe62d666ab2182b/jetified-firebase-database-19.3.1/AndroidManifest.xml:33:17-109
+404                android:value="com.google.firebase.components.ComponentRegistrar" />
+404-->[com.google.firebase:firebase-database:19.3.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/d96243573e696b8c5fe62d666ab2182b/jetified-firebase-database-19.3.1/AndroidManifest.xml:34:17-82
+405            <meta-data
+405-->[com.google.firebase:firebase-storage-ktx:19.1.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/77e143b63f64eae93b26ff47738e266c/jetified-firebase-storage-ktx-19.1.1/AndroidManifest.xml:15:13-17:85
+406                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+406-->[com.google.firebase:firebase-storage-ktx:19.1.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/77e143b63f64eae93b26ff47738e266c/jetified-firebase-storage-ktx-19.1.1/AndroidManifest.xml:16:17-122
+407                android:value="com.google.firebase.components.ComponentRegistrar" />
+407-->[com.google.firebase:firebase-storage-ktx:19.1.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/77e143b63f64eae93b26ff47738e266c/jetified-firebase-storage-ktx-19.1.1/AndroidManifest.xml:17:17-82
+408            <meta-data
+408-->[com.google.firebase:firebase-storage:19.1.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/50233e92cdb9691061bca6afe232a700/jetified-firebase-storage-19.1.1/AndroidManifest.xml:33:13-35:85
+409                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+409-->[com.google.firebase:firebase-storage:19.1.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/50233e92cdb9691061bca6afe232a700/jetified-firebase-storage-19.1.1/AndroidManifest.xml:34:17-107
+410                android:value="com.google.firebase.components.ComponentRegistrar" />
+410-->[com.google.firebase:firebase-storage:19.1.1] /home/veselin/.gradle/caches/transforms-2/files-2.1/50233e92cdb9691061bca6afe232a700/jetified-firebase-storage-19.1.1/AndroidManifest.xml:35:17-82
+411            <meta-data
+411-->[com.google.firebase:firebase-functions:19.0.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3c5e0f413d29ab211584af67011986ca/jetified-firebase-functions-19.0.2/AndroidManifest.xml:18:13-20:85
+412                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+412-->[com.google.firebase:firebase-functions:19.0.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3c5e0f413d29ab211584af67011986ca/jetified-firebase-functions-19.0.2/AndroidManifest.xml:19:17-111
+413                android:value="com.google.firebase.components.ComponentRegistrar" />
+413-->[com.google.firebase:firebase-functions:19.0.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3c5e0f413d29ab211584af67011986ca/jetified-firebase-functions-19.0.2/AndroidManifest.xml:20:17-82
+414            <meta-data
+414-->[com.google.firebase:firebase-common-ktx:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/5d4a1e497e420b7bc0e53baee10cf881/jetified-firebase-common-ktx-19.3.0/AndroidManifest.xml:15:13-17:85
+415                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+415-->[com.google.firebase:firebase-common-ktx:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/5d4a1e497e420b7bc0e53baee10cf881/jetified-firebase-common-ktx-19.3.0/AndroidManifest.xml:16:17-113
+416                android:value="com.google.firebase.components.ComponentRegistrar" />
+416-->[com.google.firebase:firebase-common-ktx:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/5d4a1e497e420b7bc0e53baee10cf881/jetified-firebase-common-ktx-19.3.0/AndroidManifest.xml:17:17-82
+417            <meta-data
+417-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:32:13-34:85
+418                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+418-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:33:17-96
+419                android:value="com.google.firebase.components.ComponentRegistrar" />
+419-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:34:17-82
+420            <meta-data
+420-->[com.google.android.gms:play-services-measurement-api:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/b267ee37b7b0bafccfe2464d30d749bf/jetified-play-services-measurement-api-17.4.4/AndroidManifest.xml:30:13-32:85
+421                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+421-->[com.google.android.gms:play-services-measurement-api:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/b267ee37b7b0bafccfe2464d30d749bf/jetified-play-services-measurement-api-17.4.4/AndroidManifest.xml:31:17-139
+422                android:value="com.google.firebase.components.ComponentRegistrar" />
+422-->[com.google.android.gms:play-services-measurement-api:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/b267ee37b7b0bafccfe2464d30d749bf/jetified-play-services-measurement-api-17.4.4/AndroidManifest.xml:32:17-82
+423            <meta-data
+423-->[com.google.firebase:firebase-datatransport:17.0.3] /home/veselin/.gradle/caches/transforms-2/files-2.1/d94fc0450088fdc65cf6b33daa6b501c/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+424                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+424-->[com.google.firebase:firebase-datatransport:17.0.3] /home/veselin/.gradle/caches/transforms-2/files-2.1/d94fc0450088fdc65cf6b33daa6b501c/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+425                android:value="com.google.firebase.components.ComponentRegistrar" />
+425-->[com.google.firebase:firebase-datatransport:17.0.3] /home/veselin/.gradle/caches/transforms-2/files-2.1/d94fc0450088fdc65cf6b33daa6b501c/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+426            <meta-data
+426-->[com.google.firebase:firebase-installations:16.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/1d0b4d5aa2abf0c4c746087546d16876/jetified-firebase-installations-16.3.2/AndroidManifest.xml:17:13-19:85
+427                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+427-->[com.google.firebase:firebase-installations:16.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/1d0b4d5aa2abf0c4c746087546d16876/jetified-firebase-installations-16.3.2/AndroidManifest.xml:18:17-127
+428                android:value="com.google.firebase.components.ComponentRegistrar" />
+428-->[com.google.firebase:firebase-installations:16.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/1d0b4d5aa2abf0c4c746087546d16876/jetified-firebase-installations-16.3.2/AndroidManifest.xml:19:17-82
+429        </service>
+430
+431        <activity
+431-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
+432            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+432-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:25:13-85
+433            android:excludeFromRecents="true"
+433-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:26:13-46
+434            android:exported="true"
+434-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:27:13-36
+435            android:launchMode="singleTask"
+435-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:28:13-44
+436            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+436-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:29:13-102
+437            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+437-->[com.google.firebase:firebase-auth:19.3.2] /home/veselin/.gradle/caches/transforms-2/files-2.1/3cd476998b61a75095b8ec344c5e45a7/jetified-firebase-auth-19.3.2/AndroidManifest.xml:30:13-72
+438
+439        <service
+439-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:17:9-20:72
+440            android:name="com.evernote.android.job.v21.PlatformJobService"
+440-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:18:13-75
+441            android:exported="false"
+441-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:19:13-37
+442            android:permission="android.permission.BIND_JOB_SERVICE" />
+442-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:20:13-69
+443        <service
+443-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:21:9-24:72
+444            android:name="com.evernote.android.job.v14.PlatformAlarmService"
+444-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:22:13-77
+445            android:exported="false"
+445-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:23:13-37
+446            android:permission="android.permission.BIND_JOB_SERVICE" />
+446-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:24:13-69
+447        <service
+447-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:25:9-27:40
+448            android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"
+448-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:26:13-82
+449            android:exported="false" />
+449-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:27:13-37
+450
+451        <receiver
+451-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:29:9-38:20
+452            android:name="com.evernote.android.job.v14.PlatformAlarmReceiver"
+452-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:30:13-78
+453            android:exported="false" >
+453-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:31:13-37
+454            <intent-filter>
+454-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:32:13-37:29
+455
+456                <!-- Keep the filter for legacy intents -->
+457                <action android:name="com.evernote.android.job.v14.RUN_JOB" />
+457-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:35:17-79
+457-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:35:25-76
+458                <action android:name="net.vrallev.android.job.v14.RUN_JOB" />
+458-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:36:17-78
+458-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:36:25-75
+459            </intent-filter>
+460        </receiver>
+461        <receiver
+461-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:39:9-48:20
+462            android:name="com.evernote.android.job.JobBootReceiver"
+462-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:40:13-68
+463            android:exported="false" >
+463-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:41:13-37
+464            <intent-filter>
+464-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:42:13-47:29
+465                <action android:name="android.intent.action.BOOT_COMPLETED" />
+465-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:43:17-79
+465-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:43:25-76
+466                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+466-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:44:17-82
+466-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:44:25-79
+467                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+467-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:45:17-82
+467-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:45:25-79
+468                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+468-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:46:17-84
+468-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:46:25-81
+469            </intent-filter>
+470        </receiver>
+471
+472        <service
+472-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:50:9-58:19
+473            android:name="com.evernote.android.job.gcm.PlatformGcmService"
+473-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:51:13-75
+474            android:enabled="false"
+474-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:52:13-36
+475            android:exported="true"
+475-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:53:13-36
+476            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+476-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:54:13-93
+477            <intent-filter>
+477-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:55:13-57:29
+478                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+478-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:56:17-87
+478-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:56:25-84
+479            </intent-filter>
+480        </service>
+481        <service
+481-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:59:9-62:72
+482            android:name="com.evernote.android.job.JobRescheduleService"
+482-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:60:13-73
+483            android:exported="false"
+483-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:61:13-37
+484            android:permission="android.permission.BIND_JOB_SERVICE" />
+484-->[com.evernote:android-job:1.2.6] /home/veselin/.gradle/caches/transforms-2/files-2.1/a4d6bf825346a9a66892022b6632a2b7/jetified-android-job-1.2.6/AndroidManifest.xml:62:13-69
+485
+486        <receiver
+486-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:37:9-44:20
+487            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+487-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:38:13-78
+488            android:exported="true"
+488-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:39:13-36
+489            android:permission="com.google.android.c2dm.permission.SEND" >
+489-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:40:13-73
+490            <intent-filter>
+490-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:41:13-43:29
+491                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+491-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:42:17-81
+491-->[com.google.firebase:firebase-iid:20.1.7] /home/veselin/.gradle/caches/transforms-2/files-2.1/535b64f01ab76285c52362cf35a738bb/jetified-firebase-iid-20.1.7/AndroidManifest.xml:42:25-78
+492            </intent-filter>
+493        </receiver>
+494        <receiver
+494-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:29:9-33:20
+495            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+495-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:30:13-85
+496            android:enabled="true"
+496-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:31:13-35
+497            android:exported="false" >
+497-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:32:13-37
+498        </receiver>
+499
+500        <service
+500-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:35:9-38:40
+501            android:name="com.google.android.gms.measurement.AppMeasurementService"
+501-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:36:13-84
+502            android:enabled="true"
+502-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:37:13-35
+503            android:exported="false" />
+503-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:38:13-37
+504        <service
+504-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:39:9-43:72
+505            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+505-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:40:13-87
+506            android:enabled="true"
+506-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:41:13-35
+507            android:exported="false"
+507-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:42:13-37
+508            android:permission="android.permission.BIND_JOB_SERVICE" />
+508-->[com.google.android.gms:play-services-measurement:17.4.4] /home/veselin/.gradle/caches/transforms-2/files-2.1/d8107184633a186f3599832afaa840da/jetified-play-services-measurement-17.4.4/AndroidManifest.xml:43:13-69
+509
+510        <provider
+510-->[com.google.firebase:firebase-common:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/91829b66e6434acd43e7dafa23f781b1/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+511            android:name="com.google.firebase.provider.FirebaseInitProvider"
+511-->[com.google.firebase:firebase-common:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/91829b66e6434acd43e7dafa23f781b1/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+512            android:authorities="com.devlomi.fireapp.firebaseinitprovider"
+512-->[com.google.firebase:firebase-common:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/91829b66e6434acd43e7dafa23f781b1/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+513            android:exported="false"
+513-->[com.google.firebase:firebase-common:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/91829b66e6434acd43e7dafa23f781b1/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+514            android:initOrder="100" />
+514-->[com.google.firebase:firebase-common:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/91829b66e6434acd43e7dafa23f781b1/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+515
+516        <activity
+516-->[com.google.android.gms:play-services-base:17.1.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/6b9f2a356a1a01e298d1ab2fe77f9b09/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+517            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+517-->[com.google.android.gms:play-services-base:17.1.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/6b9f2a356a1a01e298d1ab2fe77f9b09/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+518            android:exported="false"
+518-->[com.google.android.gms:play-services-base:17.1.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/6b9f2a356a1a01e298d1ab2fe77f9b09/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+519            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+519-->[com.google.android.gms:play-services-base:17.1.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/6b9f2a356a1a01e298d1ab2fe77f9b09/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+520        <activity
+520-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:29:9-33:64
+521            android:name="com.google.android.gms.ads.AdActivity"
+521-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:30:13-65
+522            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+522-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:31:13-122
+523            android:exported="false"
+523-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:32:13-37
+524            android:theme="@android:style/Theme.Translucent" />
+524-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:33:13-61
+525
+526        <provider
+526-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:35:9-39:39
+527            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+527-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:36:13-76
+528            android:authorities="com.devlomi.fireapp.mobileadsinitprovider"
+528-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:37:13-73
+529            android:exported="false"
+529-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:38:13-37
+530            android:initOrder="100" />
+530-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/8d77024a53aa9c0d9437af363929ccc7/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:39:13-36
+531
+532        <meta-data
+532-->[com.google.android.gms:play-services-basement:17.0.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/6c27c2a053b76dd95182a9a72c0b77dd/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+533            android:name="com.google.android.gms.version"
+533-->[com.google.android.gms:play-services-basement:17.0.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/6c27c2a053b76dd95182a9a72c0b77dd/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+534            android:value="@integer/google_play_services_version" />
+534-->[com.google.android.gms:play-services-basement:17.0.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/6c27c2a053b76dd95182a9a72c0b77dd/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+535
+536        <service
+536-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/154e5612d96540094d34e74ef6433a1f/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+537            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+537-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/154e5612d96540094d34e74ef6433a1f/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+538            android:exported="false" >
+538-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/154e5612d96540094d34e74ef6433a1f/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+539            <meta-data
+539-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/154e5612d96540094d34e74ef6433a1f/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+540                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+540-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/154e5612d96540094d34e74ef6433a1f/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+541                android:value="cct" />
+541-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/154e5612d96540094d34e74ef6433a1f/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+542        </service>
+543        <service
+543-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/34c34e23c386e527581f913c76ba91ed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+544            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+544-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/34c34e23c386e527581f913c76ba91ed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+545            android:exported="false"
+545-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/34c34e23c386e527581f913c76ba91ed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+546            android:permission="android.permission.BIND_JOB_SERVICE" >
+546-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/34c34e23c386e527581f913c76ba91ed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+547        </service>
+548
+549        <receiver
+549-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/34c34e23c386e527581f913c76ba91ed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+550            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+550-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/34c34e23c386e527581f913c76ba91ed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+551            android:exported="false" />
+551-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/34c34e23c386e527581f913c76ba91ed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+552
+553        <provider
+553-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/097bc06430f89aeaa6a585da49a6c9e2/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+554            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+554-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/097bc06430f89aeaa6a585da49a6c9e2/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+555            android:authorities="com.devlomi.fireapp.lifecycle-process"
+555-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/097bc06430f89aeaa6a585da49a6c9e2/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+556            android:exported="false"
+556-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/097bc06430f89aeaa6a585da49a6c9e2/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+557            android:multiprocess="true" />
+557-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/veselin/.gradle/caches/transforms-2/files-2.1/097bc06430f89aeaa6a585da49a6c9e2/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+558    </application>
+559
+560</manifest>

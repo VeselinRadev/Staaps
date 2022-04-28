@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "766056593432",
+    "firebase_url": "https://staaps2.firebaseio.com",
+    "project_id": "staaps2",
+    "storage_bucket": "staaps2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766056593432:android:3bb9aee05aa94a85f22b6d",
+        "android_client_info": {
+          "package_name": "com.devlomi.fireapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766056593432-88imfr66ujva6ibb34jjhqmjbloijsdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devlomi.fireapp",
+            "certificate_hash": "6b76b7eb5167a611e5b2e384b5231bdb8ffa6aa0"
+          }
+        },
+        {
+          "client_id": "766056593432-mqt1qcdu2lu8f8ta7dtb7gou4a9vthqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAozCGKRR2yVcqF2zn_weDhX2jruhJOVv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766056593432-mqt1qcdu2lu8f8ta7dtb7gou4a9vthqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
